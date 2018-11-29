@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Detail</title>
+    <link rel='stylesheet'
+          href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/toolbar.css' />
+</head>
+<body>
+
+
+    <div class="topnav">
+        <a class="active" , href="TTTPage.html">Home</a>
+        <a href="/incident/create">Create New Incident</a>
+        <a href="/incident">Open Incident</a>
+        <a href="#ply">PLY</a>
+        <a href="#has">HAS</a>
+        <a href="#Search">Search</a>
+        <input type="text"
+               placeholder="Site Search...">
+    </div>
+    <div class="sidenav">
+        <a href="#IMT-Home">IMT-Home</a>
+        <a href="/incident/create">Create New Incident</a>
+        <a href="/incident">Open Incidents</a>
+        <a href="#QuickList">Quick List</a>
+        <a href="#TTT">Transitory Team Referral</a>
+        <a href="#over21days">
+            Open
+
+            Over 21 days
+        </a>
+        <a href="#AAC-consulation">AAC Consultation</a>
+        <a href="#Stage 3">Stage3</a>
+        <a href="#Segment 5">Segment 5</a>
+        <a href="#LocalTriage">Local Triage</a>
+    </div>
+
+
+    <div class="container">
+
+
+        <h1>Incident Detail</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Raised By</td>
+
+
+                    <td>:</td>
+                    <td><%= employee.raisedby %></td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+
+
+                    <td>:</td>
+                    <td><%= employee.location %></td>
+                </tr>
+                <tr>
+
+
+                    <td>Team Leader</td>
+                    <td>:</td>
+                    <td><%= employee.teamleader%></td>
+                </tr>
+                
+
+
+            </tbody>
+        </table>
+        <h3><a href="/employees/edit/<%= employee._id%>">EDIT</a></h3>
+        <form action="/employees/delete/<%= employee._id%>" method="post">
+            <button type="submit">DELETE</button>
+
+
+        </form>
+    </div>
+</body>
+</html>

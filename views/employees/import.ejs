@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Upload Incidents</title>
+
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+
+        <link rel='stylesheet' href='/stylesheets/toolbar.css' />
+
+  </head>
+  <body>
+
+	<div class="topnav">
+        <a class="active" , href="/home">Home</a>
+        <a href="/incident/create">Create New Incident</a>
+        <a href="/incident">Open Incident</a>
+        <a href="#ply">PLY</a>
+        <a href="#has">HAS</a>
+        <a href="#Search">Search</a>
+        <a href="/import">Import Incidents</a>
+        <input type="text" placeholder="Site Search...">
+    </div>
+    <div class="sidenav">
+        <a href="/home">IMT-Home</a>
+        <a href="/incident/create">Create New Incident</a>
+        <a href="/incident">Open Incidents</a>
+        <a href="#QuickList">Quick List</a>
+        <a href="#TTT">Transitory Team Referral</a>
+        <a href="#over21days">Open Over 21 days</a>
+        <a href="#AAC-consulation">AAC Consultation</a>
+        <a href="#Stage 3">Stage3</a>
+        <a href="#Segment 5">Segment 5</a>
+        <a href="#LocalTriage">Local Triage</a>
+    </div>
+
+	<div class="container">
+	
+	     <p>Use form to upload Incidents. Click <a href="C:\Parag\HTML\name.html"> here. </a> </p>
+	     <form action="/import/save/" method="POST"encType="multipart/form-data">
+		<input type="file" name="file" accept="*.csv" ><br/><br/> 
+		<input type="submit" value="Upload">
+	     </form>
+	
+	</div>
+
+
+  </body>
+</html>

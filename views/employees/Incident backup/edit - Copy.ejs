@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Employee</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="topnav">
+        <a class="active", href="TTTPage.html">Home</a>
+        <a href="#CreateNewIncident">Create New Incident</a>
+        <a href="#OpenIncident">Open Incident</a>
+        <a href="#ply">PLY</a>
+        <a href="#has">HAS</a>
+        <a href="#Search">Search</a>
+	<input type="text" placeholder="Site Search...">
+    </div>
+
+    <div class="sidenav">
+
+        <a href="#IMT-Home">IMT-Home</a>
+        <a href="/incident/create">Create New Incident</a>
+        <a href="#OpenIncidents">Open Incidents</a>
+        <a href="#QuickList">Quick List</a>
+        <a href="#TTT">Transitory Team Referral</a>
+	<a href="#over21days">Open Over 21 days</a>
+	<a href="#AAC-consulation">AAC Consultation</a>
+	<a href="#Stage 3">Stage3</a>
+	<a href="#Segment 5">Segment 5</a>
+	<a href="#LocalTriage">Local Triage</a>
+      </div>
+
+  
+  
+    <div class="container">
+      <h3><a href="/employees">Employee List</a></h3>
+      <h1>Edit Employee</h1>
+      <form action="/employees/update/<%= employee._id%>" method="post">
+        <table>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td><input type="text" name="name" value="<%= employee.name %>" /></td>
+            </tr>
+            <tr>
+              <td>Address</td>
+              <td><textarea name="address"><%= employee.address %></textarea></td>
+            </tr>
+            <tr>
+              <td>Position</td>
+              <td><input type="text" name="position" value="<%= employee.position %>" /></td>
+            </tr>
+            <tr>
+              <td>Salary</td>
+              <td><input type="number" name="salary" value="<%= employee.salary %>" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"><button type="submit">Update</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

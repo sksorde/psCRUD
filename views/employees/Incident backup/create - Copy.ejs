@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create New Incident</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <link rel='stylesheet' href='/stylesheets/toolbar.css' />
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" , href="/home">Home</a>
+        <a href="/incident/create">Create New Incident</a>
+        <a href="/incident">Open Incident</a>
+        <a href="#ply">PLY</a>
+        <a href="#has">HAS</a>
+        <a href="#Search">Search</a>
+        <input type="text" placeholder="Site Search...">
+    </div>
+    <div class="sidenav">
+        <a href="/home">IMT-Home</a>
+        <a href="/incident/create">Create New Incident</a>
+        <a href="/incident">Open Incidents</a>
+        <a href="#QuickList">Quick List</a>
+        <a href="#TTT">Transitory Team Referral</a>
+        <a href="#over21days">Open Over 21 days</a>
+        <a href="#AAC-consulation">AAC Consultation</a>
+        <a href="#Stage 3">Stage3</a>
+        <a href="#Segment 5">Segment 5</a>
+        <a href="#LocalTriage">Local Triage</a>
+    </div>
+
+
+    <div class="container">
+
+        <h1>Create New Incident</h1>
+        <form action="/incident/save" method="post">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Raised By:</td>
+                        <td><input type="text" name="raisedby" /></td>
+                    </tr>
+                    <tr>
+                        <td>Caseworker:</td>
+                        <td><textarea name="caseworker"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Contact Number :</td>
+                        <td><input type="text" name="contactnum" /></td>
+                    </tr>
+                    <tr>
+                        <td>Team Leader</td>
+                        <td><input type="text" name="teamleader" /></td>
+                        <td>Location</td>
+                        <td><input type="text" name="location" /></td>
+                    </tr>
+                    <tr>
+                        <td>Team </td>
+                        <td><input type="text" name="team" /></td>
+                        <td>Workgroup</td>
+                        <td><input type="text" name="workgroup" /></td>
+                    </tr>
+                    <tr>
+                        <td>G7 </td>
+                        <td><input type="checkbox" name="g7" /></td>
+                        <td>Achieved</td>
+                        <td><input type="text" name="achieved" /></td>
+                    </tr>
+                    <tr>
+                        <td>Component Area </td>
+                        <td><input type="text" name="comparea" /></td>
+                        <td>Sub Area</td>
+                        <td><input type="text" name="subarea" /></td>
+                    </tr>
+                    <tr>
+                        <td>Functional area Affected </td>
+                        <td><input type="text" name="funareaaffected" /></td>
+                        <td>SR Number</td>
+                        <td><input type="text" name="srnumber" /></td>
+                    </tr>
+                    <tr>
+                        <td>Functional area Affected </td>
+                        <td><input type="text" name="funareaaffected" /></td>
+                        <td>SR Number</td>
+                        <td><input type="text" name="srnumber" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Functional area Affected </td>
+                        <td><input type="text" name="funareaaffected" /></td>
+                        <td>SR Number</td>
+                        <td><input type="text" name="srnumber" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>SR Substatus </td>
+                        <td><input type="text" name="srsubstatus" /></td>
+                        <td>Case Nuber</td>
+                        <td><input type="text" name="casenum" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Master Case Number </td>
+                        <td><input type="text" name="mastercasenum" /></td>
+                        <td>PP NINO</td>
+                        <td><input type="text" name="ppnino" /></td>
+                        <td>PP Name</td>
+                        <td><input type="text" name="ppname" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>RP NINO</td>
+                        <td><input type="text" name="rpnino" /></td>
+                        <td>RP Name</td>
+                        <td><input type="text" name="rpname" /></td>
+                    </tr>
+                    <tr>
+                        <td>RP NINO</td>
+                        <td><input type="text" name="rpnino" /></td>
+                        <td>RP Name</td>
+                        <td><input type="text" name="rpname" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>BICC Rep Name</td>
+                        <td><input type="text" name="biccrepname" /></td>
+                        <td>BICC Ans Sub Area</td>
+                        <td><input type="text" name="biccanssubarea" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Report Name</td>
+                        <td><input type="text" name="repname" /></td>
+                        <td>Report Number</td>
+                        <td><input type="text" name="reportnum" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Foder Name</td>
+                        <td><input type="text" name="foldername" /></td>
+                        <td>Report Col Name</td>
+                        <td><input type="text" name="repcolname" /></td>
+                        <td>Column Item Name</td>
+                        <td><input type="text" name="colitemname" /></td>
+                    </tr>
+                    <tr>
+                        <td>SER?</td>
+                        <td><input type="radio" name="ser" /></td>
+                        <td>SET?</td>
+                        <td><input type="radio" name="set" /></td>
+                        <td>Case Progress Affected?</td>
+                        <td><input type="radio" name="caseprogaffected" /></td>
+                        <td>Pay Affected?</td>
+                        <td><input type="radio" name="payaffected" /></td>
+                        <td>Reputation risk</td>
+                        <td><input type="radio" name="reprisk" /></td>
+                        <td>Case Affected</td>
+                        <td><input type="text" name="caseaffected" /></td>
+                    </tr>
+                    <tr>
+                        <td>Background Information</td>
+                        <td><input type="text" name="bginfo" /></td>
+                    </tr>
+                    <tr>
+                        <td>Error Message</td>
+                        <td><input type="text" name="errmsg" /></td>
+                    </tr>
+                    <tr>
+                        <td>Procedural Path</td>
+                        <td><input type="text" name="procpath" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Other Informationn</td>
+                        <td><input type="text" name="othinfo" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="20"><button type="submit">Save</button></td>
+                    </tr>
+                </tbody>
+            </table>
+	    
+        </form>
+
+
+	<form action="/incident/create" method="get">
+
+		<table>
+
+			<tr>
+                	        <td colspan="20"><button type="submit">Cancel</button></td>
+		        </tr>
+   		</table>
+
+	</form>
+
+    </div>
+</body>
+</html>

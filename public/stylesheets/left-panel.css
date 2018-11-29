@@ -1,0 +1,84 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 10;
+}
+
+.sidenav {
+    height: 100%;
+    position: relative;
+    width: 160px;
+ //   z-index: 1;
+
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 10px;
+    padding-left: 10px;
+    left: 9px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    font-size: 12px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+.container h3 a:hover, .container table tr td button:hover {
+	background-color: \78F5AE;
+	color: #999999;
+}
+
+.container table {
+	width:360px;
+}
+
+.container table tr td {
+	padding: 5px;
+}
+
+.container table tr td button {
+	border: solid 1px $AABF5C;
+	background-color: $00AE4D;
+	border-radius: 6px;
+	text-transform: uppercase:
+	color: #FFFFFF;
+	margin: 10px 0;
+	padding: 10px 20px;
+}
+
+.container form button {
+	border: solid 1px #CB2027;
+	background-color: $DDAE4D;
+	border-radius: 6px;
+	text-transform: uppercase:
+	color: #FFFFFF;
+	margin: 10px 0;
+	padding: 10px 20px
+}
+
+.container .list-table {
+
+	width: 360px;
+	border: solid 2px #DDDDDD;
+	border-spacing: 0;
+}
+
+.container .list-table th {
+
+	border-bottom: solid 2px #DDDDDD;
+}
+
+.mainbody {
+    background-color: grey;
+    padding-left: 8%;
+    //padding-top: -20px;
+    width: 1100px;
+}

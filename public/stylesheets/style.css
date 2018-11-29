@@ -1,0 +1,124 @@
+body {
+    padding: 30px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: #555555;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: relative;
+    //z-index: 1;
+ //   top: 80px;
+    left: 0;
+    background-color: #111;
+    //overflow-x: hidden;
+    //padding-top: 20px;
+    //padding-top: 10px;
+}
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        font-size: 12px;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+.main {
+    margin-left: 0px; /* Same as the width of the sidenav */
+    /*font-size: 28px; /* Increased text to enable scrolling */
+    padding: 10px 10px;
+    //height: 100%;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+
+a {
+    //color: white;
+    color: #00B7FF;
+}
+
+.container {
+    padding: 20px;
+    background-color: #efefef;
+    width: 1285px;
+    //border-radius: 6px;
+    top: 10px;
+    //left: 10px;
+    margin-left: 160px;
+    margin-top: -268px;
+}
+
+    .container h3 a {
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #00AE4D;
+        //border-radius: 6px;
+        color: #FFFFFF;
+    }
+
+        .container h3 a:hover, .container table tr td button:hover {
+            background-color: #78F5AE;
+            color: #999999;
+        }
+
+    .container table {
+        width: 360px;
+    }
+
+        .container table tr td {
+            padding: 5px;
+        }
+
+            /*.container table tr td input, .container table tr td textarea {
+  border: solid 1px #dddddd;
+  padding: 5px 45px;
+  border-radius: 6px;
+  width: 100%;
+  color: #777777;
+}*/
+
+            .container table tr td button {
+                border: solid 1px #AABF5C;
+                background-color: #00AE4D;
+                //border-radius: 6px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin: 10px 0;
+                padding: 10px 20px;
+            }
+
+    .container form button {
+        border: solid 1px #CB2027;
+        background-color: #DD4B39;
+        //border-radius: 6px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 10px 0;
+        padding: 10px 20px;
+    }
+
+    .container .list-table {
+        width: 360px;
+        //border: solid 2px #DDDDDD;
+        border-spacing: 0;
+    }
+
+        .container .list-table th {
+            border-bottom: solid 2px #DDDDDD;
+        }
